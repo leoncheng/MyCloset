@@ -1,0 +1,539 @@
+TMyCloset
+v7
+r0
+t338558285.932467
+cCheck dependencies
+cProcessInfoPlistFile /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/Info.plist MyCloset-Info.plist
+cCompileXIB /Users/mmcl/项目/MyCloset/MainWindow.xib
+cProcessPCH /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch.gch MyCloset_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/main.o /Users/mmcl/项目/MyCloset/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyClosetAppDelegate.o /Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCTableViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCAddItemViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCDCViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemListViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemTypeListViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCMainViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCFoundaton.o /Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItem.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemType.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCModel.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemList.o /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemTypeList.o /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCPickerView.o /Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset normal i386
+cGenerateDSYMFile /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app.dSYM /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset
+cTouch /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m
+c000000004E7DC5520000000000000000
+t1316865362
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m
+c000000004E7DC54D0000000000000000
+t1316865357
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m
+c000000004E7DC55C0000000000000000
+t1316865372
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m
+c000000004E7DC5660000000000000000
+t1316865382
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m
+c000000004E7DC5710000000000000000
+t1316865393
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m
+c000000004E7DC5780000000000000000
+t1316865400
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m
+c000000004E7DC5810000000000000000
+t1316865409
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m
+c000000004E7DC58D0000000000000000
+t1316865421
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m
+c000000004E7DC59C0000000000000000
+t1316865436
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.h
+c000000004E7DC5A00000000000000000
+t1316865440
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m
+c000000004E7DC5A40000000000000000
+t1316865444
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.h
+c000000004E7DC5A80000000000000000
+t1316865448
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m
+c000000004E7DC5AB0000000000000000
+t1316865451
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m
+c000000004E7DC5B70000000000000000
+t1316865463
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m
+c000000004E7DC5BE0000000000000000
+t1316865470
+s0
+
+N/Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.h
+c000000004E7DC06B0000000000000142
+t1316864107
+s322
+i<UIKit/UIKit.h>
+
+N/Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m
+c000000004E7DC06B00000000000009CA
+t1316864107
+s2506
+i"MyClosetAppDelegate.h"
+
+N/Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m
+c000000004E7DC5C60000000000000000
+t1316865478
+s0
+
+N/Users/mmcl/项目/MyCloset/MainWindow.xib
+c000000004E7DC06B000000000000210D
+t1316864107
+s8461
+
+N/Users/mmcl/项目/MyCloset/MyCloset_Prefix.pch
+c000000004E7DC06B00000000000000B9
+t1316864107
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app
+t1316865485
+s204
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app.dSYM
+t1316865485
+s102
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/Info.plist
+t1316865483
+s595
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MainWindow.nib
+t1316865484
+s985
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset
+t1316865485
+s15608
+
+N/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/PkgInfo
+t1316865483
+s8
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCAddItemViewController.o
+t1316865485
+s3960
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCDCViewController.o
+t1316865485
+s3952
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCFoundaton.o
+t1316865485
+s3936
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItem.o
+t1316865485
+s3932
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemListViewController.o
+t1316865485
+s3964
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemType.o
+t1316865485
+s3940
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemTypeListViewController.o
+t1316865485
+s3972
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCMainViewController.o
+t1316865485
+s3956
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCModel.o
+t1316865485
+s3932
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCPickerView.o
+t1316865485
+s3928
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCTableViewController.o
+t1316865485
+s3972
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemList.o
+t1316865485
+s3932
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemTypeList.o
+t1316865485
+s3940
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCViewController.o
+t1316865485
+s3960
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyCloset.LinkFileList
+c000000004E7DC5CB00000000000007CB
+t1316865483
+s1995
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyClosetAppDelegate.o
+t1316865485
+s49320
+
+N/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/main.o
+t1316865485
+s6280
+
+N/Users/mmcl/项目/MyCloset/main.m
+c000000004E7DC06B0000000000000162
+t1316864107
+s354
+i<UIKit/UIKit.h>
+
+N/var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch.gch
+t1316865485
+s15453392
+
+NMyCloset-Info.plist
+c000000004E7DC06B000000000000038D
+t1316864107
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies338558283#338558283#0(0"0(0#1#0"8625553344#0"0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCAddItemViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.443319
+e338558285.524571
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCAddItemViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m338558285#338558285#0(0"0(0#0#73"/Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m8634517888#1871"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/MCAddItemViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCAddItemViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCDCViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.497253
+e338558285.590073
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCDCViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m338558285#338558285#0(0"0(0#0#68"/Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m8622717088#1861"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/MCDCViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCDCViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCFoundaton.o /Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.646575
+e338558285.712910
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCFoundaton.o
+x/Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m338558285#338558285#0(0"0(0#0#60"/Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m8639564128#1846"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Foundation/MCFoundaton.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCFoundaton.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItem.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.669523
+e338558285.731776
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItem.o
+x/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m338558285#338558285#0(0"0(0#0#58"/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m8638859168#1839"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItem.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItem.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemListViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.524702
+e338558285.580804
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemListViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m338558285#338558285#0(0"0(0#0#74"/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m8646026400#1873"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemListViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemListViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemType.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.713010
+e338558285.775055
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemType.o
+x/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m338558285#338558285#0(0"0(0#0#62"/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m8643572512#1847"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCItemType.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemType.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemTypeListViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.580914
+e338558285.669420
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemTypeListViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m338558285#338558285#0(0"0(0#0#78"/Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m8641307424#1881"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/MCItemTypeListViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCItemTypeListViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCMainViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.590172
+e338558285.646468
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCMainViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m338558285#338558285#0(0"0(0#0#70"/Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m8640715424#1865"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/MCMainViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCMainViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCModel.o /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.731883
+e338558285.794569
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCModel.o
+x/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m338558285#338558285#0(0"0(0#0#59"/Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m8642098432#1841"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Models/Common/MCModel.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCModel.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCPickerView.o /Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.828283
+e338558285.890357
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCPickerView.o
+x/Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m338558285#338558285#0(0"0(0#0#56"/Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m8640625920#1843"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Views/MCPickerView.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCPickerView.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCTableViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.392092
+e338558285.443215
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCTableViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m338558285#338558285#0(0"0(0#0#78"/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m8629749760#1874"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCTableViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCTableViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemList.o /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.775168
+e338558285.828170
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemList.o
+x/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m338558285#338558285#0(0"0(0#0#59"/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m8641500896#1848"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemList.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemList.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemTypeList.o /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.794676
+e338558285.861815
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemTypeList.o
+x/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m338558285#338558285#0(0"0(0#0#63"/Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m8641079104#1856"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Models/MCUserItemTypeList.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCUserItemTypeList.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCViewController.o /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.414777
+e338558285.496976
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCViewController.o
+x/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m338558285#338558285#0(0"0(0#0#73"/Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m8625843712#1864"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/Controllers/Common/MCViewController.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MCViewController.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyClosetAppDelegate.o /Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.314150
+e338558285.414666
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyClosetAppDelegate.o
+x/Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m338558285#338558285#0(0"0(0#0#57"/Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m8638972576#1851"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/Classes/MyClosetAppDelegate.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyClosetAppDelegate.o0#
+
+CCompileC build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/main.o /Users/mmcl/项目/MyCloset/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558285.312736
+e338558285.391986
+r1
+xCompileC
+xbuild/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/main.o
+x/Users/mmcl/项目/MyCloset/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@42"Compile /Users/mmcl/项目/MyCloset/main.m338558285#338558285#0(0"0(0#0#34"/Users/mmcl/项目/MyCloset/main.m8643302176#1813"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -include /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch -c /Users/mmcl/项目/MyCloset/main.m -o /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/mmcl/项目/MyCloset/MainWindow.xib
+s338558283.985062
+e338558284.350353
+r1
+xCompileXIB
+x/Users/mmcl/项目/MyCloset/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib338558283#338558284#0(0"0(0#0#42"/Users/mmcl/项目/MyCloset/MainWindow.xib8641698912#538"    cd /Users/mmcl/项目/MyCloset    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MainWindow.nib /Users/mmcl/项目/MyCloset/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app.dSYM /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset
+s338558285.916145
+e338558285.929470
+r1
+xGenerateDSYMFile
+x/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app.dSYM
+x/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/MyCloset.app.dSYM build/Debug-iphonesimulator/MyCloset.app/MyCloset338558285#338558285#0(0"0(0#0#77"/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset8628808384#353"    cd /Users/mmcl/项目/MyCloset    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset -o /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app.dSYM0#
+
+CLd /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset normal i386
+s338558285.890458
+e338558285.916041
+r1
+xLd
+x/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset
+xnormal
+xi386
+lSLF07#2@82"Link /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset338558285#338558285#0(0"0(0#0#0"8634269504#850"    cd /Users/mmcl/项目/MyCloset    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -filelist /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/Objects-normal/i386/MyCloset.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/MyCloset0#
+
+CProcessInfoPlistFile /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/Info.plist MyCloset-Info.plist
+s338558283.975150
+e338558283.984973
+r1
+xProcessInfoPlistFile
+x/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/Info.plist
+xMyCloset-Info.plist
+lSLF07#2@27"Process MyCloset-Info.plist338558283#338558283#0(0"0(0#0#47"/Users/mmcl/项目/MyCloset/MyCloset-Info.plist8617439040#449"    cd /Users/mmcl/项目/MyCloset    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MyCloset-Info.plist -genpkginfo /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app/Info.plist0#
+
+CProcessPCH /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch.gch MyCloset_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s338558284.350484
+e338558285.312625
+r1
+xProcessPCH
+x/var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch.gch
+xMyCloset_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile MyCloset_Prefix.pch338558284#338558285#0(0"0(0#0#47"/Users/mmcl/项目/MyCloset/MyCloset_Prefix.pch8629075328#1715"    cd /Users/mmcl/项目/MyCloset    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-generated-files.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-own-target-headers.hmap -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-all-target-headers.hmap -iquote /Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/MyCloset-project-headers.hmap -F/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator -I/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/include -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources/i386 -I/Users/mmcl/项目/MyCloset/build/MyCloset.build/Debug-iphonesimulator/MyCloset.build/DerivedSources -c /Users/mmcl/项目/MyCloset/MyCloset_Prefix.pch -o /var/folders/Q1/Q1PaiKH+HieYthwesN8LPU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MyCloset_Prefix-bjoxmjjhnzffrmgrvfgnaxupejdy/MyCloset_Prefix.pch.gch0#
+
+CTouch /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app
+s338558285.929561
+e338558285.932426
+r1
+xTouch
+x/Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app
+lSLF07#2@74"Touch /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app338558285#338558285#0(0"0(0#0#0"8625888768#257"    cd /Users/mmcl/项目/MyCloset    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mmcl/项目/MyCloset/build/Debug-iphonesimulator/MyCloset.app0#
+
