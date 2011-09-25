@@ -10,6 +10,7 @@
 
 @interface MyClosetAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	IBOutlet UINavigationController *m_naviController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

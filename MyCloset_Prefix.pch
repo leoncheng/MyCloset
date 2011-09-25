@@ -5,4 +5,8 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+	#import "MCFoundation.h"
+	#import "MCModelCommon.h"
+	#import "MCUICommon.h"
 #endif
