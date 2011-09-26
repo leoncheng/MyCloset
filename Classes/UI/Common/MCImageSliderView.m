@@ -34,15 +34,46 @@
 - (void)CommonInit
 {
 	self.scrollEnabled = YES;
-
+	self.alwaysBounceHorizontal = YES;
+	
 	CGFloat imageButtonWidth = 80;
 	CGFloat imageButtonHeight = self.frame.size.height;
-	for (int i = 0; i < 4 ; i++) {
+	for (int i = 0; i < 8 ; i++) {
 		UIButton* imageButton = [self _CreateImageButton:CGRectMake(i * imageButtonWidth, 0, imageButtonWidth, imageButtonHeight)];
 		[self addSubview:imageButton];
 	}
-	self.contentSize = CGSizeMake(400, imageButtonHeight);
+	self.contentSize = CGSizeMake(640 , imageButtonHeight);
+	self.delegate = self;
 }
 
+- (void)_AutoAlignScrollView:(UIScrollView*)scrollView
+{
+	CGPoint curOffset = scrollView.contentOffset;
+	
+	NSInteger deltaOffsetX = (NSInteger)curOffset.x % 80;
+	
+	if (deltaOffsetX > 40) 
+	{
+		[self setContentOffset:CGPointMake(curOffset.x + 80 - deltaOffsetX, curOffset.y) animated:YES];
+	}
+	else 
+	{
+		[self setContentOffset:CGPointMake(curOffset.x - deltaOffsetX, curOffset.y) animated:YES];
+	}
+}
+
+#pragma mark UIScrollViewDelegate methods
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+	[self _AutoAlignScrollView:scrollView];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+	if (decelerate == NO) {
+		[self _AutoAlignScrollView:scrollView];
+	}
+}
 
 @end
