@@ -134,7 +134,7 @@ MC_DEFINE_SINGLETON(MCModelHelper)
 	NSManagedObjectContext* context = self.managedObjectContext;
 	
 	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-	[fetchRequest setEntity:[NSEntityDescription entityForName:@"MCItemType" inManagedObjectContext:context]];
+	[fetchRequest setEntity:[NSEntityDescription entityForName:modelName inManagedObjectContext:context]];
 	
 	NSError *error = nil;
 	NSArray *types = [context executeFetchRequest:fetchRequest error:&error];

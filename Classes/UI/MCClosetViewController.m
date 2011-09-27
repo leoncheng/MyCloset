@@ -7,6 +7,7 @@
 //
 
 #import "MCClosetViewController.h"
+#import "MCAddItemViewController.h"
 
 @implementation MCClosetColumnCell
 
@@ -15,14 +16,23 @@
 	CGRect sliderframe = self.bounds;
 	sliderframe.size.height = 104;	//the height of the cell is still 44 at the moment, so we need to assign 104 manually
 	
-	MCImageSliderView* itemsSliderView = [[MCImageSliderView alloc] initWithFrame:sliderframe];
-	[self addSubview:itemsSliderView];
-	[itemsSliderView release];
+	m_itemsSliderView = [[MCImageSliderView alloc] initWithFrame:sliderframe];
+	[self addSubview:m_itemsSliderView];
 }
 
 - (void)OnResourceChanged:(MCTableViewResource *)resource
 {
-	//do nothing
+	NSArray* items = [[MCModelHelper SharedInstance] Load:@"MCItem"];
+	for (int i = 0; i < [items count]; i++) 
+	{
+		[m_itemsSliderView AddImage:[UIImage imageNamed:@"MeganFox.jpg"]];
+	}
+}
+
+- (void)dealloc
+{
+	MCSAFERELEASE(m_itemsSliderView)
+	[super dealloc];
 }
 
 @end
@@ -54,6 +64,13 @@
 	resource.CellName = @"MCClosetColumnCell";
 	[self AddResource:resource];
 	[resource release];
+	
+	//add addItem button on navigation bar
+	UIBarButtonItem* addItemBtn = [[UIBarButtonItem alloc] 
+								   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
+								   target:self action:@selector(OnTouchAddItemBtn)];
+	self.navigationItem.rightBarButtonItem = addItemBtn;
+	[addItemBtn release];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,5 +91,15 @@
     [super dealloc];
 }
 
+#pragma mark Customized private methods
+- (void)OnTouchAddItemBtn
+{
+	MCAddItemViewController* controller = [[MCAddItemViewController alloc] initWithNibName:@"MCAddItemViewController" bundle:nil];
+	UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:controller];
+	[controller release];
+	[self presentModalViewController:naviController animated:YES];
+	[naviController release];
+	
+}
 
 @end

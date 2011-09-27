@@ -11,10 +11,8 @@
 
 @interface MCClosetColumnCell : MCTableViewCell
 {
-	
+	MCImageSliderView* m_itemsSliderView;
 }
-
-
 
 @end
 

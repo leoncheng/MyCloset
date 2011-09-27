@@ -32,12 +32,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	
 	/*
-	MCItemType* type = [[MCModelFactory SharedInstance] CreateModelBy:@"MCItemType"];
+	MCItemType* type = [[MCModelHelper SharedInstance] CreateModelBy:@"MCItemType"];
 	type.Name = @"上装";
 	
-	[MCModelHelper Save:type];
+	[[MCModelHelper SharedInstance] Save:type];
 	 */
+	 
 }
 
 /*

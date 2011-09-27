@@ -20,6 +20,12 @@
 	return self;
 }
 
+- (void)dealloc
+{
+	MCSAFERELEASE(m_images)
+	[super dealloc];
+}
+
 #pragma mark Customized methods
 - (UIButton*)_CreateImageButton:(CGRect)frame
 {
@@ -35,15 +41,23 @@
 {
 	self.scrollEnabled = YES;
 	self.alwaysBounceHorizontal = YES;
+	self.delegate = self;
 	
+	m_images = [[NSMutableArray alloc] init];
+}
+
+- (void)AddImage:(UIImage *)image
+{
+	[m_images addObject:image];
+	
+	NSInteger imagesCount = [m_images count];
+	NSInteger imageButtonIndex = MAX(imagesCount - 1, 0);
 	CGFloat imageButtonWidth = 80;
 	CGFloat imageButtonHeight = self.frame.size.height;
-	for (int i = 0; i < 8 ; i++) {
-		UIButton* imageButton = [self _CreateImageButton:CGRectMake(i * imageButtonWidth, 0, imageButtonWidth, imageButtonHeight)];
-		[self addSubview:imageButton];
-	}
-	self.contentSize = CGSizeMake(640 , imageButtonHeight);
-	self.delegate = self;
+	UIButton* imageButton = [self _CreateImageButton:CGRectMake(imageButtonIndex * imageButtonWidth, 0, imageButtonWidth, imageButtonHeight)];
+	[self addSubview:imageButton];
+	
+	self.contentSize = CGSizeMake(imagesCount * imageButtonWidth, imageButtonHeight);
 }
 
 - (void)_AutoAlignScrollView:(UIScrollView*)scrollView

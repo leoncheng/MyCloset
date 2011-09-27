@@ -10,10 +10,12 @@
 
 
 @interface MCImageSliderView : UIScrollView<UIScrollViewDelegate> {
-
+	NSMutableArray* m_images;
 }
 
 - (void)CommonInit;
+
+- (void)AddImage:(UIImage*)image;
 
 - (UIButton*)_CreateImageButton:(CGRect)frame;
 @end
