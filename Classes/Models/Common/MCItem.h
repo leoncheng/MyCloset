@@ -2,7 +2,7 @@
 //  MCItem.h
 //  MyCloset
 //
-//  Created by mmcl on 11-9-25.
+//  Created by mmcl on 11-9-28.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -14,7 +14,9 @@
 {
 }
 
+@property (nonatomic, retain) id ThumbnailImage;
 @property (nonatomic, retain) NSNumber * Price;
+@property (nonatomic, retain) NSManagedObject * Image;
 @property (nonatomic, retain) MCItemType * Type;
 
 @end

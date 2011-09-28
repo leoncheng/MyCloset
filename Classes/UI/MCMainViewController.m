@@ -38,7 +38,7 @@
 	type.Name = @"上装";
 	
 	[[MCModelHelper SharedInstance] Save:type];
-	 */
+	*/
 	 
 }
 

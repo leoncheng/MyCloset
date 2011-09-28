@@ -7,7 +7,7 @@
 //
 
 #import "MCClosetViewController.h"
-#import "MCAddItemViewController.h"
+#import "MCItemDetailViewController.h"
 
 @implementation MCClosetColumnCell
 
@@ -22,10 +22,11 @@
 
 - (void)OnResourceChanged:(MCTableViewResource *)resource
 {
-	NSArray* items = [[MCModelHelper SharedInstance] Load:@"MCItem"];
-	for (int i = 0; i < [items count]; i++) 
+	NSArray* itemList = [[MCModelHelper SharedInstance] Load:@"MCItem"];
+	for (MCItem* item in itemList) 
 	{
-		[m_itemsSliderView AddImage:[UIImage imageNamed:@"MeganFox.jpg"]];
+		
+		[m_itemsSliderView AddImage:item.ThumbnailImage];
 	}
 }
 
@@ -94,7 +95,7 @@
 #pragma mark Customized private methods
 - (void)OnTouchAddItemBtn
 {
-	MCAddItemViewController* controller = [[MCAddItemViewController alloc] initWithNibName:@"MCAddItemViewController" bundle:nil];
+	MCItemDetailViewController* controller = [[MCItemDetailViewController alloc] initWithNibName:@"MCItemDetailViewController" bundle:nil];
 	UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:controller];
 	[controller release];
 	[self presentModalViewController:naviController animated:YES];

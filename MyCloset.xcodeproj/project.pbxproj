@@ -14,12 +14,13 @@
 		00336EA1142E095300E34ED3 /* MCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00336EA0142E095300E34ED3 /* MCMainViewController.xib */; };
 		00336F05142E34BF00E34ED3 /* MCModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F04142E34BF00E34ED3 /* MCModelHelper.m */; };
 		00336F14142E381000E34ED3 /* MCFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F13142E381000E34ED3 /* MCFoundation.m */; };
-		0097646A14314C28007B9E07 /* MCAddItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0097646914314C28007B9E07 /* MCAddItemViewController.xib */; };
-		0097646E14314C8B007B9E07 /* MCAddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097646D14314C8B007B9E07 /* MCAddItemViewController.m */; };
+		008ADED614335D85003D95D6 /* MCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 008ADED514335D85003D95D6 /* MCItem.m */; };
+		008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */; };
+		0097646A14314C28007B9E07 /* MCItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0097646914314C28007B9E07 /* MCItemDetailViewController.xib */; };
+		0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */; };
 		00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96CEC142F495C00096794 /* MCImageSliderView.m */; };
 		00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C96CEF142F4A7D00096794 /* MeganFox.jpg */; };
 		00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB06142ECDD900BAEFBB /* MCItemType.m */; };
-		00CDBB39142ED42500BAEFBB /* MCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB38142ED42500BAEFBB /* MCItem.m */; };
 		00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB87142EF48900BAEFBB /* MCTableViewController.m */; };
 		00CDBB96142EF48900BAEFBB /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB8A142EF48900BAEFBB /* MCViewController.m */; };
 		00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */; };
@@ -47,16 +48,18 @@
 		00336F04142E34BF00E34ED3 /* MCModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCModelHelper.m; sourceTree = "<group>"; };
 		00336F12142E381000E34ED3 /* MCFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFoundation.h; sourceTree = "<group>"; };
 		00336F13142E381000E34ED3 /* MCFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFoundation.m; sourceTree = "<group>"; };
-		0097646914314C28007B9E07 /* MCAddItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MCAddItemViewController.xib; path = Resources/Xibs/MCAddItemViewController.xib; sourceTree = "<group>"; };
-		0097646C14314C8B007B9E07 /* MCAddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAddItemViewController.h; sourceTree = "<group>"; };
-		0097646D14314C8B007B9E07 /* MCAddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAddItemViewController.m; sourceTree = "<group>"; };
+		008ADED414335D85003D95D6 /* MCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItem.h; sourceTree = "<group>"; };
+		008ADED514335D85003D95D6 /* MCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItem.m; sourceTree = "<group>"; };
+		008ADEDC14335E6E003D95D6 /* ImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToDataTransformer.h; sourceTree = "<group>"; };
+		008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToDataTransformer.m; sourceTree = "<group>"; };
+		0097646914314C28007B9E07 /* MCItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MCItemDetailViewController.xib; path = Resources/Xibs/MCItemDetailViewController.xib; sourceTree = "<group>"; };
+		0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemDetailViewController.h; sourceTree = "<group>"; };
+		0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemDetailViewController.m; sourceTree = "<group>"; };
 		00C96CEB142F495C00096794 /* MCImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageSliderView.h; sourceTree = "<group>"; };
 		00C96CEC142F495C00096794 /* MCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageSliderView.m; sourceTree = "<group>"; };
 		00C96CEF142F4A7D00096794 /* MeganFox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeganFox.jpg; sourceTree = "<group>"; };
 		00CDBB05142ECDD900BAEFBB /* MCItemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemType.h; sourceTree = "<group>"; };
 		00CDBB06142ECDD900BAEFBB /* MCItemType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemType.m; sourceTree = "<group>"; };
-		00CDBB37142ED42500BAEFBB /* MCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItem.h; sourceTree = "<group>"; };
-		00CDBB38142ED42500BAEFBB /* MCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItem.m; sourceTree = "<group>"; };
 		00CDBB86142EF48900BAEFBB /* MCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableViewController.h; sourceTree = "<group>"; };
 		00CDBB87142EF48900BAEFBB /* MCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableViewController.m; sourceTree = "<group>"; };
 		00CDBB88142EF48900BAEFBB /* MCUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUICommon.h; sourceTree = "<group>"; };
@@ -121,14 +124,16 @@
 		00336E1C142DFC7E00E34ED3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				00CDBB37142ED42500BAEFBB /* MCItem.h */,
-				00CDBB38142ED42500BAEFBB /* MCItem.m */,
+				008ADED414335D85003D95D6 /* MCItem.h */,
+				008ADED514335D85003D95D6 /* MCItem.m */,
 				00CDBB05142ECDD900BAEFBB /* MCItemType.h */,
 				00CDBB06142ECDD900BAEFBB /* MCItemType.m */,
 				00336E23142DFC7E00E34ED3 /* MCModelCommon.h */,
 				00336F03142E34BF00E34ED3 /* MCModelHelper.h */,
 				00336F04142E34BF00E34ED3 /* MCModelHelper.m */,
 				00336E44142E02B800E34ED3 /* MyCloset.xcdatamodel */,
+				008ADEDC14335E6E003D95D6 /* ImageToDataTransformer.h */,
+				008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -137,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				00336EA0142E095300E34ED3 /* MCMainViewController.xib */,
-				0097646914314C28007B9E07 /* MCAddItemViewController.xib */,
+				0097646914314C28007B9E07 /* MCItemDetailViewController.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -163,8 +168,8 @@
 				00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */,
 				00CDBB93142EF48900BAEFBB /* MCMainViewController.h */,
 				00CDBB94142EF48900BAEFBB /* MCMainViewController.m */,
-				0097646C14314C8B007B9E07 /* MCAddItemViewController.h */,
-				0097646D14314C8B007B9E07 /* MCAddItemViewController.m */,
+				0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */,
+				0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -298,7 +303,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				00336EA1142E095300E34ED3 /* MCMainViewController.xib in Resources */,
 				00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */,
-				0097646A14314C28007B9E07 /* MCAddItemViewController.xib in Resources */,
+				0097646A14314C28007B9E07 /* MCItemDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +322,6 @@
 				00336F05142E34BF00E34ED3 /* MCModelHelper.m in Sources */,
 				00336F14142E381000E34ED3 /* MCFoundation.m in Sources */,
 				00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */,
-				00CDBB39142ED42500BAEFBB /* MCItem.m in Sources */,
 				00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */,
 				00CDBB96142EF48900BAEFBB /* MCViewController.m in Sources */,
 				00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */,
@@ -325,7 +329,9 @@
 				00CDBB9A142EF48900BAEFBB /* MCItemTypeListViewController.m in Sources */,
 				00CDBB9B142EF48900BAEFBB /* MCMainViewController.m in Sources */,
 				00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */,
-				0097646E14314C8B007B9E07 /* MCAddItemViewController.m in Sources */,
+				0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */,
+				008ADED614335D85003D95D6 /* MCItem.m in Sources */,
+				008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

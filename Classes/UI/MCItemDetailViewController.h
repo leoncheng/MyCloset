@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MCAddItemViewController : UIViewController {
+@interface MCItemDetailViewController : UIViewController<UIActionSheetDelegate> {
 
 }
 
+- (IBAction)OnTouchPhotoBtn;
 @end

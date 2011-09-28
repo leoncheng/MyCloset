@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "MCAddItemViewController.h"
+#import "MCItemDetailViewController.h"
 
 
-@implementation MCAddItemViewController
+@implementation MCItemDetailViewController
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -58,11 +58,24 @@
     MCItem *item = [[MCModelHelper SharedInstance] CreateModelBy:@"MCItem"];
 	item.Price = [NSNumber numberWithInt:2000];
 	item.Type = curType;
+	item.ThumbnailImage = [UIImage imageNamed:@"meganFox.jpg"];
 	
 	[[MCModelHelper SharedInstance]Save:item];
 	
 	//close controller
 	[self.navigationController.parentViewController dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark customized public methods
+- (IBAction)OnTouchPhotoBtn
+{
+	// open a dialog with an OK and cancel button
+	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+															 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"相机" otherButtonTitles:nil];
+	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+	[actionSheet showInView:self.view]; // show from our table view (pops up in the middle of the table)
+	[actionSheet release];
+	
 }
 
 @end
