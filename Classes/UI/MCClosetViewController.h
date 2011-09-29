@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MCItemDetailViewController.h"
 
 @interface MCClosetColumnCell : MCTableViewCell
 {
@@ -17,7 +17,7 @@
 @end
 
 
-@interface MCClosetViewController : MCTableViewController {
+@interface MCClosetViewController : MCTableViewController<MCItemDetailViewControllerDelegate> {
 
 }
 

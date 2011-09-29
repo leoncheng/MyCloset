@@ -17,5 +17,7 @@
 
 - (void)AddImage:(UIImage*)image;
 
-- (UIButton*)_CreateImageButton:(CGRect)frame;
+- (void)ClearImages;
+
+- (UIButton*)_CreateImageButton:(CGRect)frame withImage:(UIImage*)image;
 @end

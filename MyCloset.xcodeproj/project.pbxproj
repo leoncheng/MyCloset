@@ -18,13 +18,13 @@
 		008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */; };
 		0097646A14314C28007B9E07 /* MCItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0097646914314C28007B9E07 /* MCItemDetailViewController.xib */; };
 		0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */; };
+		00A10F1E143497970003D740 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A10F1D143497970003D740 /* MobileCoreServices.framework */; };
+		00A10F2A143498B40003D740 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A10F29143498B40003D740 /* MCViewController.m */; };
 		00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96CEC142F495C00096794 /* MCImageSliderView.m */; };
 		00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C96CEF142F4A7D00096794 /* MeganFox.jpg */; };
 		00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB06142ECDD900BAEFBB /* MCItemType.m */; };
 		00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB87142EF48900BAEFBB /* MCTableViewController.m */; };
-		00CDBB96142EF48900BAEFBB /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB8A142EF48900BAEFBB /* MCViewController.m */; };
 		00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */; };
-		00CDBB99142EF48900BAEFBB /* MCDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB90142EF48900BAEFBB /* MCDCViewController.m */; };
 		00CDBB9A142EF48900BAEFBB /* MCItemTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */; };
 		00CDBB9B142EF48900BAEFBB /* MCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB94142EF48900BAEFBB /* MCMainViewController.m */; };
 		1D3623260D0F684500981E51 /* MyClosetAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MyClosetAppDelegate.m */; };
@@ -55,6 +55,9 @@
 		0097646914314C28007B9E07 /* MCItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MCItemDetailViewController.xib; path = Resources/Xibs/MCItemDetailViewController.xib; sourceTree = "<group>"; };
 		0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemDetailViewController.h; sourceTree = "<group>"; };
 		0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemDetailViewController.m; sourceTree = "<group>"; };
+		00A10F1D143497970003D740 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		00A10F28143498B40003D740 /* MCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		00A10F29143498B40003D740 /* MCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
 		00C96CEB142F495C00096794 /* MCImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageSliderView.h; sourceTree = "<group>"; };
 		00C96CEC142F495C00096794 /* MCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageSliderView.m; sourceTree = "<group>"; };
 		00C96CEF142F4A7D00096794 /* MeganFox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeganFox.jpg; sourceTree = "<group>"; };
@@ -63,12 +66,8 @@
 		00CDBB86142EF48900BAEFBB /* MCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableViewController.h; sourceTree = "<group>"; };
 		00CDBB87142EF48900BAEFBB /* MCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableViewController.m; sourceTree = "<group>"; };
 		00CDBB88142EF48900BAEFBB /* MCUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUICommon.h; sourceTree = "<group>"; };
-		00CDBB89142EF48900BAEFBB /* MCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
-		00CDBB8A142EF48900BAEFBB /* MCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
 		00CDBB8D142EF48900BAEFBB /* MCClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClosetViewController.h; sourceTree = "<group>"; };
 		00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClosetViewController.m; sourceTree = "<group>"; };
-		00CDBB8F142EF48900BAEFBB /* MCDCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDCViewController.h; sourceTree = "<group>"; };
-		00CDBB90142EF48900BAEFBB /* MCDCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDCViewController.m; sourceTree = "<group>"; };
 		00CDBB91142EF48900BAEFBB /* MCItemTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemTypeListViewController.h; sourceTree = "<group>"; };
 		00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemTypeListViewController.m; sourceTree = "<group>"; };
 		00CDBB93142EF48900BAEFBB /* MCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainViewController.h; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				00336E5F142E083200E34ED3 /* CoreData.framework in Frameworks */,
+				00A10F1E143497970003D740 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +162,6 @@
 				00CDBB85142EF48900BAEFBB /* Common */,
 				00CDBB8D142EF48900BAEFBB /* MCClosetViewController.h */,
 				00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */,
-				00CDBB8F142EF48900BAEFBB /* MCDCViewController.h */,
-				00CDBB90142EF48900BAEFBB /* MCDCViewController.m */,
 				00CDBB91142EF48900BAEFBB /* MCItemTypeListViewController.h */,
 				00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */,
 				00CDBB93142EF48900BAEFBB /* MCMainViewController.h */,
@@ -179,11 +177,11 @@
 			children = (
 				00CDBB86142EF48900BAEFBB /* MCTableViewController.h */,
 				00CDBB87142EF48900BAEFBB /* MCTableViewController.m */,
-				00CDBB89142EF48900BAEFBB /* MCViewController.h */,
-				00CDBB8A142EF48900BAEFBB /* MCViewController.m */,
 				00C96CEB142F495C00096794 /* MCImageSliderView.h */,
 				00C96CEC142F495C00096794 /* MCImageSliderView.m */,
 				00CDBB88142EF48900BAEFBB /* MCUICommon.h */,
+				00A10F28143498B40003D740 /* MCViewController.h */,
+				00A10F29143498B40003D740 /* MCViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -247,6 +245,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				00336E5E142E083200E34ED3 /* CoreData.framework */,
+				00A10F1D143497970003D740 /* MobileCoreServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -323,15 +322,14 @@
 				00336F14142E381000E34ED3 /* MCFoundation.m in Sources */,
 				00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */,
 				00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */,
-				00CDBB96142EF48900BAEFBB /* MCViewController.m in Sources */,
 				00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */,
-				00CDBB99142EF48900BAEFBB /* MCDCViewController.m in Sources */,
 				00CDBB9A142EF48900BAEFBB /* MCItemTypeListViewController.m in Sources */,
 				00CDBB9B142EF48900BAEFBB /* MCMainViewController.m in Sources */,
 				00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */,
 				0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */,
 				008ADED614335D85003D95D6 /* MCItem.m in Sources */,
 				008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */,
+				00A10F2A143498B40003D740 /* MCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

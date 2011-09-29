@@ -27,10 +27,9 @@
 }
 
 #pragma mark Customized methods
-- (UIButton*)_CreateImageButton:(CGRect)frame
+- (UIButton*)_CreateImageButton:(CGRect)frame withImage:(UIImage*)image
 {
 	UIButton* imageButton = [[[UIButton alloc] initWithFrame:frame] autorelease];
-	UIImage* image = [UIImage imageNamed:@"MeganFox.jpg"];
 	[imageButton setImage:image forState:UIControlStateNormal];
 	UIEdgeInsets imageEdgeInsets = UIEdgeInsetsMake(5, 5 , 5, 5);
 	imageButton.imageEdgeInsets = imageEdgeInsets;
@@ -48,16 +47,23 @@
 
 - (void)AddImage:(UIImage *)image
 {
-	[m_images addObject:image];
-	
 	NSInteger imagesCount = [m_images count];
 	NSInteger imageButtonIndex = MAX(imagesCount - 1, 0);
 	CGFloat imageButtonWidth = 80;
 	CGFloat imageButtonHeight = self.frame.size.height;
-	UIButton* imageButton = [self _CreateImageButton:CGRectMake(imageButtonIndex * imageButtonWidth, 0, imageButtonWidth, imageButtonHeight)];
+	UIButton* imageButton = [self _CreateImageButton:
+							 CGRectMake(imageButtonIndex * imageButtonWidth, 0, imageButtonWidth, imageButtonHeight) withImage:image];
 	[self addSubview:imageButton];
-	
+	[m_images addObject:imageButton];
 	self.contentSize = CGSizeMake(imagesCount * imageButtonWidth, imageButtonHeight);
+}
+
+- (void)ClearImages
+{
+	for (UIButton* imageBtn in m_images) {
+		[imageBtn removeFromSuperview];
+	}
+	[m_images removeAllObjects];
 }
 
 - (void)_AutoAlignScrollView:(UIScrollView*)scrollView

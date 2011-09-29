@@ -7,19 +7,26 @@
 //
 
 #import "MCItemDetailViewController.h"
-
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @implementation MCItemDetailViewController
+@synthesize Delegate = m_delegate;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	UIBarButtonItem* closeBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+	UIBarButtonItem* saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
 																			  target:self 
 																			  action:@selector(_OnTouchSaveBtn)]; 
-	self.navigationItem.leftBarButtonItem = closeBtn;
-	[closeBtn release];
+	self.navigationItem.leftBarButtonItem = saveBtn;
+	[saveBtn release];
+	
+	UIBarButtonItem* cancelBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+																			 target:self 
+																			 action:@selector(_OnTouchCancelBtn)]; 
+	self.navigationItem.rightBarButtonItem = cancelBtn;
+	[cancelBtn release];
 }
 
 /*
@@ -43,27 +50,77 @@
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
+	MCSAFERELEASE(m_item)
     [super dealloc];
 }
 
-#pragma mark customized private methods
-- (void)_OnTouchSaveBtn
+- (void)CommonInit
 {
+	[super CommonInit];
+	
 	// Fetch the recipe types in alphabetical order by name from the recipe's context.
 	NSArray* types = [[MCModelHelper SharedInstance]Load:@"MCItemType"];
 	MCItemType* curType = [types objectAtIndex:0];
 	
-    MCItem *item = [[MCModelHelper SharedInstance] CreateModelBy:@"MCItem"];
-	item.Price = [NSNumber numberWithInt:2000];
-	item.Type = curType;
-	item.ThumbnailImage = [UIImage imageNamed:@"meganFox.jpg"];
+    m_item = [[[MCModelHelper SharedInstance] CreateModelBy:@"MCItem"] retain];
+	m_item.Price = [NSNumber numberWithInt:2000];
+	m_item.Type = curType;
 	
-	[[MCModelHelper SharedInstance]Save:item];
 	
-	//close controller
+}
+
+- (void)ReleaseViews
+{
+	MCSAFERELEASE(m_photoBtn)
+	[super ReleaseViews];
+}
+
+#pragma mark customized private methods
+- (void)_Close
+{
 	[self.navigationController.parentViewController dismissModalViewControllerAnimated:YES];
+}
+
+- (void)_OnTouchSaveBtn
+{
+	[[MCModelHelper SharedInstance]Save:m_item];
+	
+	if (m_delegate && [m_delegate respondsToSelector:@selector(OnSave)]) {
+		[m_delegate performSelector:@selector(OnSave)];
+	}
+	[self _Close];
+}
+
+- (void)_OnTouchCancelBtn
+{
+	[self _Close];
+}
+
+- (void)_LaunchCameraView
+{
+	if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == NO)
+	{
+		return ;
+	}
+	
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+	
+    // Displays a control that allows the user to choose picture or
+    // movie capture, if both are available:
+    cameraUI.mediaTypes =
+	[UIImagePickerController availableMediaTypesForSourceType:
+	 UIImagePickerControllerSourceTypeCamera];
+	
+    // Hides the controls for moving & scaling pictures, or for
+    // trimming movies. To instead show the controls, use YES.
+    cameraUI.allowsEditing = NO;
+	
+    cameraUI.delegate = self;
+	
+    [self presentModalViewController: cameraUI animated: YES];
+	[cameraUI release];
 }
 
 #pragma mark customized public methods
@@ -78,4 +135,41 @@
 	
 }
 
+#pragma mark UIActionSheetDelegate methods
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0) {
+		//present modal camera view
+		[self _LaunchCameraView];
+	}
+}
+
+#pragma mark mark UIImagePickerControllerDelegate methods
+
+- (void) imagePickerControllerDidCancel: (UIImagePickerController *) picker
+{
+    [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+}
+
+// For responding to the user accepting a newly-captured picture or movie
+- (void) imagePickerController: (UIImagePickerController *) picker
+ didFinishPickingMediaWithInfo: (NSDictionary *) info 
+{	
+    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
+    UIImage *originalImage;
+	
+    // Handle a still image capture
+    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeImage, 0)
+		== kCFCompareEqualTo) 
+	{
+        originalImage = (UIImage *) [info objectForKey:
+									 UIImagePickerControllerOriginalImage];
+		
+		[m_photoBtn setImage:originalImage forState:UIControlStateNormal];
+		[m_photoBtn setTitle:nil forState:UIControlStateNormal];
+		m_item.ThumbnailImage = originalImage;
+    }
+	
+    [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+}
 @end

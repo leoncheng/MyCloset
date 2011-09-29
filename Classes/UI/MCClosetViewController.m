@@ -22,10 +22,10 @@
 
 - (void)OnResourceChanged:(MCTableViewResource *)resource
 {
+	[m_itemsSliderView ClearImages];
 	NSArray* itemList = [[MCModelHelper SharedInstance] Load:@"MCItem"];
 	for (MCItem* item in itemList) 
 	{
-		
 		[m_itemsSliderView AddImage:item.ThumbnailImage];
 	}
 }
@@ -87,7 +87,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -96,10 +95,22 @@
 - (void)OnTouchAddItemBtn
 {
 	MCItemDetailViewController* controller = [[MCItemDetailViewController alloc] initWithNibName:@"MCItemDetailViewController" bundle:nil];
+	controller.Delegate = self;
 	UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:controller];
 	[controller release];
 	[self presentModalViewController:naviController animated:YES];
+
+	NSLog(@"%@", NSStringFromClass([naviController.parentViewController class]));
+	
 	[naviController release];
+	
+}
+
+#pragma mark MCItemDetailViewControllerDelegate methods
+- (void)OnSave
+{
+	NSArray* indexPaths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:0 inSection:0]];
+	[self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:YES];
 	
 }
 
