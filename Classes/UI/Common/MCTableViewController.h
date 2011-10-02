@@ -25,7 +25,7 @@
 
 - (void)CommonInit;
 
-- (void)OnResourceChanged:(MCTableViewResource*)resource;
+- (void)OnResourceChanged:(MCTableViewResource*)resource atRow:(NSUInteger)row;
 
 @end
 
@@ -38,4 +38,6 @@
 - (void)CommonInit;
 
 - (void)AddResource:(MCTableViewResource*)resource;
+
+- (void)ReleaseViews;
 @end

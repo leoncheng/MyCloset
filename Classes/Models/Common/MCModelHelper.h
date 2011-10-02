@@ -24,5 +24,7 @@
 
 - (NSArray*)Load:(NSString*)modelName;
 
+- (void)Delete:(NSArray*)objects;
+
 MC_DECLARE_AS_SINGLETON(MCModelHelper)
 @end

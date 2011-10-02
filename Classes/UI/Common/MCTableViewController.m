@@ -38,7 +38,7 @@
 	//do nothing
 }
 
-- (void)OnResourceChanged:(MCTableViewResource*)resource
+- (void)OnResourceChanged:(MCTableViewResource*)resource atRow:(NSUInteger)row
 {
 	//do nothing;
 }
@@ -49,6 +49,24 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
 	self = [super initWithStyle:style];
+	if (self != nil) {
+		[self CommonInit];
+	}
+	return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self != nil) {
+		[self CommonInit];
+	}
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
 	if (self != nil) {
 		[self CommonInit];
 	}
@@ -74,9 +92,11 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+	[self ReleaseViews];
 }
 
 - (void)dealloc {
+	[self ReleaseViews];
 	MCSAFERELEASE(m_resourceList)
     [super dealloc];
 }
@@ -90,6 +110,11 @@
 - (void)AddResource:(MCTableViewResource*)resource
 {
 	[m_resourceList addObject:resource];
+}
+
+- (void)ReleaseViews
+{
+	//do nothing
 }
 
 #pragma mark Customized private methods
@@ -119,7 +144,7 @@
 	
 	if (cell != nil)
 	{
-		[cell OnResourceChanged:resource];
+		[cell OnResourceChanged:resource atRow:row];
 	}
 	return cell;
 }

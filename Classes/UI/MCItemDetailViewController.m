@@ -60,12 +60,8 @@
 	[super CommonInit];
 	
 	// Fetch the recipe types in alphabetical order by name from the recipe's context.
-	NSArray* types = [[MCModelHelper SharedInstance]Load:@"MCItemType"];
-	MCItemType* curType = [types objectAtIndex:0];
-	
     m_item = [[[MCModelHelper SharedInstance] CreateModelBy:@"MCItem"] retain];
 	m_item.Price = [NSNumber numberWithInt:2000];
-	m_item.Type = curType;
 	
 	
 }
@@ -73,6 +69,7 @@
 - (void)ReleaseViews
 {
 	MCSAFERELEASE(m_photoBtn)
+	MCSAFERELEASE(m_typesCtrl)
 	[super ReleaseViews];
 }
 
@@ -84,6 +81,9 @@
 
 - (void)_OnTouchSaveBtn
 {
+	NSArray* types = [[MCModelHelper SharedInstance]Load:@"MCItemType"];
+	m_item.Type = [types objectAtIndex:m_typesCtrl.selectedSegmentIndex];
+	
 	[[MCModelHelper SharedInstance]Save:m_item];
 	
 	if (m_delegate && [m_delegate respondsToSelector:@selector(OnSave)]) {

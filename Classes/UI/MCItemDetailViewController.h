@@ -13,6 +13,7 @@
 @interface MCItemDetailViewController : MCViewController
 <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 	IBOutlet UIButton* m_photoBtn;
+	IBOutlet UISegmentedControl* m_typesCtrl;
 	MCItem *m_item;
 	id<MCItemDetailViewControllerDelegate> m_delegate;
 }

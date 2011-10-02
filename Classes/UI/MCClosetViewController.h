@@ -9,16 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "MCItemDetailViewController.h"
 
-@interface MCClosetColumnCell : MCTableViewCell
+@interface MCClosetColumnCell : MCTableViewCell<MCImageSliderViewDelegate>
 {
 	MCImageSliderView* m_itemsSliderView;
 }
 
+- (void)DeleteItems;
 @end
 
 
 @interface MCClosetViewController : MCTableViewController<MCItemDetailViewControllerDelegate> {
-
+	UIBarButtonItem* m_deleteBtnItem;
+	UIBarButtonItem* m_editBtnItem;
+	UIBarButtonItem* m_addBtnItem;
 }
 
 @end
