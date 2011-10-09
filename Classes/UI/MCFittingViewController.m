@@ -1,0 +1,89 @@
+    //
+//  MCFittingViewController.m
+//  MyCloset
+//
+//  Created by mmcl on 11-10-6.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "MCFittingViewController.h"
+
+@implementation MCFittingViewController
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	
+	self.title = @"试衣间";
+	
+	UIBarButtonItem* closetBtnItem = [[UIBarButtonItem alloc] 
+						initWithTitle:@"衣橱" 
+						style:UIBarButtonItemStyleBordered 
+						target:self 
+						action:@selector(_OnTouchClosetItemBtn:)];
+	self.navigationItem.rightBarButtonItem = closetBtnItem;
+	
+	//add items slider at the bottom of the view
+	CGRect itemSliderFrame = self.view.frame;
+	itemSliderFrame.size.height = 104;
+	itemSliderFrame.origin.y = self.view.frame.size.height - itemSliderFrame.size.height;
+	m_itemSlider = [[MCImageSliderView alloc] initWithFrame:itemSliderFrame];
+	m_itemSlider.Delegate = self;
+	NSArray* selectedItems = [self GetParamForKey:@"selectedItems"];
+	for (MCItem* item in selectedItems) {
+		[m_itemSlider AddImage:item.ThumbnailImage];
+	}
+	[self.view addSubview:m_itemSlider];
+	
+	//add item assembly view
+	CGRect assemblyViewFrame = self.view.frame;
+	assemblyViewFrame.size.height -= itemSliderFrame.size.height;
+	m_assemblyView = [[MCImageAssemblyView alloc] initWithFrame:assemblyViewFrame];
+	[self.view addSubview:m_assemblyView];
+}
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+- (void)ReleaseViews
+{
+	MCSAFERELEASE(m_itemSlider)
+	MCSAFERELEASE(m_assemblyView)
+}
+
+- (void)_OnTouchClosetItemBtn:(id)sender
+{
+	[self.parentViewController dismissModalViewControllerAnimated:YES];
+}
+
+#pragma mark MCImageSliderViewDelegate Methods
+- (void)ImageSliderView:(MCImageSliderView*)imageSlider DidSelectedAtIndex:(NSUInteger)index
+{
+	UIImage* itemImage = [imageSlider ImageAtIndex:index];
+	[m_assemblyView AddImage:itemImage];
+}
+
+@end

@@ -13,12 +13,18 @@
 		00336E5F142E083200E34ED3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00336E5E142E083200E34ED3 /* CoreData.framework */; };
 		00336F05142E34BF00E34ED3 /* MCModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F04142E34BF00E34ED3 /* MCModelHelper.m */; };
 		00336F14142E381000E34ED3 /* MCFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F13142E381000E34ED3 /* MCFoundation.m */; };
+		007E4E36143EBC58000367C2 /* MCImageAssemblyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007E4E35143EBC58000367C2 /* MCImageAssemblyView.m */; };
 		008ADED614335D85003D95D6 /* MCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 008ADED514335D85003D95D6 /* MCItem.m */; };
 		008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */; };
+		008D01B4144086B800E10A7B /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 008D01B2144086B800E10A7B /* closeButton.png */; };
+		008D01B5144086B800E10A7B /* scaleButton.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 008D01B3144086B800E10A7B /* scaleButton.jpeg */; };
 		0097646A14314C28007B9E07 /* MCItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0097646914314C28007B9E07 /* MCItemDetailViewController.xib */; };
 		0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */; };
 		00A10F1E143497970003D740 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A10F1D143497970003D740 /* MobileCoreServices.framework */; };
 		00A10F2A143498B40003D740 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A10F29143498B40003D740 /* MCViewController.m */; };
+		00A7EA721441DF8300F3E5C9 /* MCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EA711441DF8300F3E5C9 /* MCButton.m */; };
+		00C79B73143D702500441626 /* MCFittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C79B72143D702500441626 /* MCFittingViewController.m */; };
+		00C79B77143D705000441626 /* MCFittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C79B76143D705000441626 /* MCFittingViewController.xib */; };
 		00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96CEC142F495C00096794 /* MCImageSliderView.m */; };
 		00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C96CEF142F4A7D00096794 /* MeganFox.jpg */; };
 		00CC0F941437010200AC6C4C /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CC0F931437010200AC6C4C /* checkMark.png */; };
@@ -47,16 +53,25 @@
 		00336F04142E34BF00E34ED3 /* MCModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCModelHelper.m; sourceTree = "<group>"; };
 		00336F12142E381000E34ED3 /* MCFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFoundation.h; sourceTree = "<group>"; };
 		00336F13142E381000E34ED3 /* MCFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFoundation.m; sourceTree = "<group>"; };
+		007E4E34143EBC58000367C2 /* MCImageAssemblyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageAssemblyView.h; sourceTree = "<group>"; };
+		007E4E35143EBC58000367C2 /* MCImageAssemblyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageAssemblyView.m; sourceTree = "<group>"; };
 		008ADED414335D85003D95D6 /* MCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItem.h; sourceTree = "<group>"; };
 		008ADED514335D85003D95D6 /* MCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItem.m; sourceTree = "<group>"; };
 		008ADEDC14335E6E003D95D6 /* ImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToDataTransformer.h; sourceTree = "<group>"; };
 		008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToDataTransformer.m; sourceTree = "<group>"; };
+		008D01B2144086B800E10A7B /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
+		008D01B3144086B800E10A7B /* scaleButton.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scaleButton.jpeg; sourceTree = "<group>"; };
 		0097646914314C28007B9E07 /* MCItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MCItemDetailViewController.xib; path = Resources/Xibs/MCItemDetailViewController.xib; sourceTree = "<group>"; };
 		0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemDetailViewController.h; sourceTree = "<group>"; };
 		0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemDetailViewController.m; sourceTree = "<group>"; };
 		00A10F1D143497970003D740 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		00A10F28143498B40003D740 /* MCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
 		00A10F29143498B40003D740 /* MCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		00A7EA701441DF8300F3E5C9 /* MCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCButton.h; sourceTree = "<group>"; };
+		00A7EA711441DF8300F3E5C9 /* MCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCButton.m; sourceTree = "<group>"; };
+		00C79B71143D702500441626 /* MCFittingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFittingViewController.h; sourceTree = "<group>"; };
+		00C79B72143D702500441626 /* MCFittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFittingViewController.m; sourceTree = "<group>"; };
+		00C79B76143D705000441626 /* MCFittingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCFittingViewController.xib; sourceTree = "<group>"; };
 		00C96CEB142F495C00096794 /* MCImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageSliderView.h; sourceTree = "<group>"; };
 		00C96CEC142F495C00096794 /* MCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageSliderView.m; sourceTree = "<group>"; };
 		00C96CEF142F4A7D00096794 /* MeganFox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeganFox.jpg; sourceTree = "<group>"; };
@@ -142,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				0097646914314C28007B9E07 /* MCItemDetailViewController.xib */,
+				00C79B76143D705000441626 /* MCFittingViewController.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -149,6 +165,8 @@
 		00C96CEE142F4A7D00096794 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				008D01B2144086B800E10A7B /* closeButton.png */,
+				008D01B3144086B800E10A7B /* scaleButton.jpeg */,
 				00CC0F931437010200AC6C4C /* checkMark.png */,
 				00C96CEF142F4A7D00096794 /* MeganFox.jpg */,
 			);
@@ -166,6 +184,8 @@
 				00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */,
 				0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */,
 				0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */,
+				00C79B71143D702500441626 /* MCFittingViewController.h */,
+				00C79B72143D702500441626 /* MCFittingViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -180,6 +200,10 @@
 				00CDBB88142EF48900BAEFBB /* MCUICommon.h */,
 				00A10F28143498B40003D740 /* MCViewController.h */,
 				00A10F29143498B40003D740 /* MCViewController.m */,
+				007E4E34143EBC58000367C2 /* MCImageAssemblyView.h */,
+				007E4E35143EBC58000367C2 /* MCImageAssemblyView.m */,
+				00A7EA701441DF8300F3E5C9 /* MCButton.h */,
+				00A7EA711441DF8300F3E5C9 /* MCButton.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -302,6 +326,9 @@
 				00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */,
 				0097646A14314C28007B9E07 /* MCItemDetailViewController.xib in Resources */,
 				00CC0F941437010200AC6C4C /* checkMark.png in Resources */,
+				00C79B77143D705000441626 /* MCFittingViewController.xib in Resources */,
+				008D01B4144086B800E10A7B /* closeButton.png in Resources */,
+				008D01B5144086B800E10A7B /* scaleButton.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +355,9 @@
 				008ADED614335D85003D95D6 /* MCItem.m in Sources */,
 				008ADEDE14335E6E003D95D6 /* ImageToDataTransformer.m in Sources */,
 				00A10F2A143498B40003D740 /* MCViewController.m in Sources */,
+				00C79B73143D702500441626 /* MCFittingViewController.m in Sources */,
+				007E4E36143EBC58000367C2 /* MCImageAssemblyView.m in Sources */,
+				00A7EA721441DF8300F3E5C9 /* MCButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

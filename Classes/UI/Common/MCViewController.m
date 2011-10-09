@@ -27,18 +27,29 @@
 
 - (void)dealloc
 {
+	MCSAFERELEASE(m_paramsDict)
 	[self ReleaseViews];
 	[super dealloc];
 }
 
 - (void)CommonInit
 {
-	//do nothing
+	m_paramsDict = [[NSMutableDictionary alloc]init];
 }
 
 - (void)ReleaseViews
 {
 	//do nothing
+}
+
+- (void)SetParam:(id)param withKey:(id)key
+{
+	[m_paramsDict setObject:param forKey:key];
+}
+
+- (id)GetParamForKey:(id)key
+{
+	return [m_paramsDict objectForKey:key];
 }
 
 @end

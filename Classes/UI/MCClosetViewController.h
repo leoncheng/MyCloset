@@ -12,16 +12,20 @@
 @interface MCClosetColumnCell : MCTableViewCell<MCImageSliderViewDelegate>
 {
 	MCImageSliderView* m_itemsSliderView;
+	NSUInteger m_row;
 }
 
+- (NSArray*)GetSelectedItems;
 - (void)DeleteItems;
 @end
 
 
 @interface MCClosetViewController : MCTableViewController<MCItemDetailViewControllerDelegate> {
-	UIBarButtonItem* m_deleteBtnItem;
 	UIBarButtonItem* m_editBtnItem;
-	UIBarButtonItem* m_addBtnItem;
+	UIBarButtonItem* m_editToolBarItem;
+	UIBarButtonItem* m_fittingBtnItem;
+	UIBarButtonItem* m_fittingCancelBtnItem;
 }
 
+- (NSArray*)_GetSelectedItems;
 @end

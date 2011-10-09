@@ -98,6 +98,7 @@
 - (void)dealloc {
 	[self ReleaseViews];
 	MCSAFERELEASE(m_resourceList)
+	MCSAFERELEASE(m_paramsDict)
     [super dealloc];
 }
 
@@ -105,6 +106,7 @@
 - (void)CommonInit
 {
 	m_resourceList = [[NSMutableArray alloc] init];
+	m_paramsDict = [[NSMutableDictionary alloc] init];
 }
 
 - (void)AddResource:(MCTableViewResource*)resource
@@ -115,6 +117,16 @@
 - (void)ReleaseViews
 {
 	//do nothing
+}
+
+- (void)SetParam:(id)param withKey:(id)key
+{
+	[m_paramsDict setObject:param forKey:key];
+}
+
+- (id)GetParamForKey:(id)key
+{
+	return [m_paramsDict objectForKey:key];
 }
 
 #pragma mark Customized private methods

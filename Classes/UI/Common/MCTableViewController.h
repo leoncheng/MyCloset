@@ -33,7 +33,12 @@
 @interface MCTableViewController : UITableViewController 
 {
 	NSMutableArray* m_resourceList;
+	NSMutableDictionary* m_paramsDict;
 }
+
+- (void)SetParam:(id)param withKey:(id)key;
+
+- (id)GetParamForKey:(id)key;
 
 - (void)CommonInit;
 

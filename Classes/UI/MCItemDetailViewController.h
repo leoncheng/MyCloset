@@ -25,6 +25,6 @@
 
 @protocol MCItemDetailViewControllerDelegate <NSObject>
 @optional
-- (void)OnSave;
+- (void)OnSave:(MCItem*)item;
 
 @end

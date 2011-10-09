@@ -83,11 +83,14 @@
 {
 	NSArray* types = [[MCModelHelper SharedInstance]Load:@"MCItemType"];
 	m_item.Type = [types objectAtIndex:m_typesCtrl.selectedSegmentIndex];
+	if (m_item.ThumbnailImage == nil) {
+		m_item.ThumbnailImage = [UIImage imageNamed:@"MeganFox.jpg"];
+	}
 	
 	[[MCModelHelper SharedInstance]Save:m_item];
 	
-	if (m_delegate && [m_delegate respondsToSelector:@selector(OnSave)]) {
-		[m_delegate performSelector:@selector(OnSave)];
+	if (m_delegate && [m_delegate respondsToSelector:@selector(OnSave:)]) {
+		[m_delegate OnSave:m_item];
 	}
 	[self _Close];
 }

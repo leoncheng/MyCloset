@@ -8,6 +8,7 @@
 
 #import "MCClosetViewController.h"
 #import "MCItemDetailViewController.h"
+#import "MCFittingViewController.h"
 
 @implementation MCClosetColumnCell
 
@@ -27,6 +28,7 @@
 	NSArray* typeList = [[MCModelHelper SharedInstance] Load:@"MCItemType"];
 	
 	MCItemType* curType = [typeList objectAtIndex:row];
+	m_row = row;
 	NSSet* itemList = curType.Items;
 	
 	for (MCItem* item in itemList) 
@@ -54,11 +56,23 @@
 
 - (void)DeleteItems
 {
+	NSArray* typeList = [[MCModelHelper SharedInstance] Load:@"MCItemType"];
+	MCItemType* curType = [typeList objectAtIndex:m_row];
+	NSArray* itemList = curType.Items.allObjects;
 	NSIndexSet* deletedItemIndexes = [m_itemsSliderView DeleteCheckedImages];
-	NSArray* itemList = [[MCModelHelper SharedInstance] Load:@"MCItem"];
 	NSArray* deletedItems = [itemList objectsAtIndexes:deletedItemIndexes];
 	[[MCModelHelper SharedInstance] Delete:deletedItems];
 	
+}
+
+- (NSArray*)GetSelectedItems
+{
+	NSArray* typeList = [[MCModelHelper SharedInstance] Load:@"MCItemType"];
+	MCItemType* curType = [typeList objectAtIndex:m_row];
+	NSArray* itemList = curType.Items.allObjects;	
+	NSIndexSet* selectedItemIndexes = [m_itemsSliderView SelectedCheckedImages];
+	NSArray* selectedItems = [itemList objectsAtIndexes:selectedItemIndexes];
+	return selectedItems;
 }
 
 #pragma mark MCImageSliderViewDelegate methods
@@ -72,16 +86,10 @@
 
 @implementation MCClosetViewController
 
-// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
+- (void)CommonInit
+{
+	[super CommonInit];
 }
-*/
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -128,12 +136,6 @@
 		[resource release];
 	}
 	
-	//add addItem button on navigation bar
-	m_addBtnItem = [[UIBarButtonItem alloc] 
-								   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd 
-								   target:self action:@selector(OnTouchAddItemBtn)];
-	self.navigationItem.rightBarButtonItem = m_addBtnItem;
-	
 	//add editItem button on navigation bar
 	m_editBtnItem = [[UIBarButtonItem alloc] 
 									initWithTitle:@"编辑" 
@@ -142,11 +144,33 @@
 									action:@selector(_OnTouchEditItemBtn:)];
 	self.navigationItem.leftBarButtonItem = m_editBtnItem;
 	
-	m_deleteBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" 
+	UIBarButtonItem* deleteBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" 
 													   style:UIBarButtonItemStyleBordered 
 														target:self 
 													  action:@selector(_OnTouchDeleteItemBtn:)];
 	
+	UIBarButtonItem* addBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"添加"
+																   style:UIBarButtonItemStyleBordered
+																  target:self 
+																  action:@selector(OnTouchAddItemBtn)];
+	
+	UIToolbar* editToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 103.0f, 44.01f)];
+	NSArray* buttons = [NSArray arrayWithObjects:deleteBtnItem, addBtnItem, nil];
+	[editToolbar setItems:buttons animated:NO];
+    m_editToolBarItem = [[UIBarButtonItem alloc] initWithCustomView:editToolbar];
+	
+	//add fitting button on navigation bar
+	m_fittingBtnItem = [[UIBarButtonItem alloc] 
+					 initWithTitle:@"试衣" 
+					 style:UIBarButtonItemStyleBordered 
+					 target:self 
+					 action:@selector(_OnTouchFittingItemBtn:)];
+	self.navigationItem.rightBarButtonItem = m_fittingBtnItem;
+	
+	m_fittingCancelBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" 
+															  style:UIBarButtonItemStyleBordered 
+															 target:self 
+															 action:@selector(_OnTouchFittingCancelItemBtn:)];
 	
 }
 
@@ -164,15 +188,16 @@
 }
 
 - (void)dealloc {
+	
     [super dealloc];
 }
 
 - (void)ReleaseViews
 {
-	MCSAFERELEASE(m_deleteBtnItem)
 	MCSAFERELEASE(m_editBtnItem)
-	MCSAFERELEASE(m_addBtnItem)
-	
+	MCSAFERELEASE(m_editToolBarItem)
+	MCSAFERELEASE(m_fittingBtnItem)
+	MCSAFERELEASE(m_fittingCancelBtnItem)
 }
 
 #pragma mark Customized private methods
@@ -199,7 +224,7 @@
 		editBtnItem.style = UIBarButtonItemStyleDone;
 		
 		//remove addItem btn and delete btn
-		self.navigationItem.rightBarButtonItem = m_deleteBtnItem;
+		self.navigationItem.rightBarButtonItem = m_editToolBarItem;
 		
 	}
 	else 
@@ -207,14 +232,63 @@
 		editBtnItem.title = @"编辑";
 		editBtnItem.style = UIBarButtonItemStyleBordered;
 		
-		self.navigationItem.rightBarButtonItem = m_addBtnItem;
+		self.navigationItem.rightBarButtonItem = m_fittingBtnItem;
 	}
 }
 
 - (void)_OnTouchDeleteItemBtn:(id)sender
 {
-	MCClosetColumnCell* cell = (MCClosetColumnCell*)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	[cell DeleteItems];
+	NSInteger rowsNumber = [self.tableView numberOfRowsInSection:0];
+	for (int i = 0; i < rowsNumber ; i++) {
+		MCClosetColumnCell* cell = (MCClosetColumnCell*)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+		[cell DeleteItems];
+	}
+	
+}
+
+- (void)_OnTouchFittingItemBtn:(id)sender
+{
+	UIBarButtonItem* fittingBtnItem = sender;
+	if ([fittingBtnItem.title isEqual:@"试衣"]) {
+		fittingBtnItem.title = @"确定";
+		self.navigationItem.leftBarButtonItem = m_fittingCancelBtnItem;
+		fittingBtnItem.style = UIBarButtonItemStyleDone;
+		//set table to edit state
+		self.editing = YES;
+	}else {
+		NSArray* selectedItems = [self _GetSelectedItems];
+		
+		//go to fitting view
+		MCFittingViewController* fittingController = [[MCFittingViewController alloc] initWithNibName:@"MCFittingViewController" bundle:nil];
+		[fittingController SetParam:selectedItems withKey:@"selectedItems"];
+		fittingController.modalTransitionStyle = UIViewAnimationTransitionFlipFromLeft;
+		UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:fittingController];
+		[fittingController release];
+		
+		[self presentModalViewController:naviController animated:YES];
+		[naviController release];
+		
+	}
+
+}
+
+- (void)_OnTouchFittingCancelItemBtn:(id)sender
+{
+	m_fittingBtnItem.title = @"试衣";
+	m_fittingBtnItem.style = UIBarButtonItemStyleBordered;
+	self.navigationItem.leftBarButtonItem = m_editBtnItem;
+	self.editing = NO;
+}
+
+- (NSArray*)_GetSelectedItems
+{
+	NSMutableArray* selectedItems = [[NSMutableArray alloc] init];
+	NSUInteger rowsNumber = [self.tableView numberOfRowsInSection:0];
+	for (int i = 0; i < rowsNumber ; i++) {
+		MCClosetColumnCell* cell = (MCClosetColumnCell*)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+		[selectedItems addObjectsFromArray:[cell GetSelectedItems]] ;
+	}
+	return selectedItems;
 }
 
 #pragma mark UITableViewDelegate methods
@@ -231,10 +305,21 @@
 }
 
 #pragma mark MCItemDetailViewControllerDelegate methods
-- (void)OnSave
+- (void)OnSave:(MCItem*)item
 {
-	NSArray* indexPaths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:0 inSection:0]];
-	[self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:YES];
+	// find the type index
+	NSArray* types = [[MCModelHelper SharedInstance] Load:@"MCItemType"];
+	NSUInteger typeIndex = 0;
+	
+	for (; typeIndex < [types count]; typeIndex++) {
+		MCItemType* type = [types objectAtIndex:typeIndex];
+		if ([type.Name isEqualToString:item.Type.Name]) {
+			break;
+		}
+	}
+	//update the corresponding row in the table
+	NSArray* indexPaths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:typeIndex inSection:0]];
+	[self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:NO];
 	
 }
 

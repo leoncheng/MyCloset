@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @interface MCImageSliderViewCell :UIButton{
 	BOOL m_editing;
 	BOOL m_checkMark;
@@ -19,6 +20,15 @@
 
 @protocol MCImageSliderViewDelegate;
 
+@interface MCImageSliderViewResource: NSObject{
+	UIImage* m_image;
+	BOOL m_checked;
+}
+@property (nonatomic, retain) UIImage* Image;
+@property (nonatomic) BOOL Checked;
+	
+@end
+
 @interface MCImageSliderView : UIView<UIScrollViewDelegate> {
 	UIScrollView* m_sliderView;
 	
@@ -27,6 +37,12 @@
 	BOOL m_editing;
 	
 	NSMutableArray*   m_curDeletingCells;
+	NSMutableArray*   m_resources;
+	
+	CGFloat m_cellWidth;
+	CGFloat m_cellHeight;
+	
+	NSInteger m_lastVisibleCellIndex;
 }
 
 @property(nonatomic, assign) id<MCImageSliderViewDelegate> Delegate;
@@ -38,13 +54,17 @@
 
 - (NSIndexSet*)DeleteCheckedImages;
 
+- (NSIndexSet*)SelectedCheckedImages;
+
 - (void)ClearImages;
 
 - (void)ClearCheckMarks;
 
 - (MCImageSliderViewCell*)CellAtIndex:(NSUInteger)index;
 
-- (MCImageSliderViewCell*)_CreateImageButton:(CGRect)frame withImage:(UIImage*)image;
+- (UIImage*)ImageAtIndex:(NSUInteger)index;
+
+- (MCImageSliderViewCell*)_CreateImageButton:(CGRect)frame;
 @end
 
 @protocol MCImageSliderViewDelegate <NSObject>

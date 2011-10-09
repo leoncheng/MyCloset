@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface MCViewController : UIViewController {
-
+	NSMutableDictionary* m_paramsDict;
 }
+
+- (void)SetParam:(id)param withKey:(id)key;
+
+- (id)GetParamForKey:(id)Key;
 
 - (void)CommonInit;
 
