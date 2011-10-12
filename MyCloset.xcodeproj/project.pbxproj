@@ -27,6 +27,7 @@
 		00C79B77143D705000441626 /* MCFittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C79B76143D705000441626 /* MCFittingViewController.xib */; };
 		00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96CEC142F495C00096794 /* MCImageSliderView.m */; };
 		00C96CF0142F4A7D00096794 /* MeganFox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C96CEF142F4A7D00096794 /* MeganFox.jpg */; };
+		00CBA8AB1443457A00854EE8 /* MCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CBA8AA1443457A00854EE8 /* MCMath.m */; };
 		00CC0F941437010200AC6C4C /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 00CC0F931437010200AC6C4C /* checkMark.png */; };
 		00CC10431437576400AC6C4C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CC10421437576400AC6C4C /* QuartzCore.framework */; };
 		00CC10641437578D00AC6C4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CC10631437578D00AC6C4C /* CoreGraphics.framework */; };
@@ -75,6 +76,8 @@
 		00C96CEB142F495C00096794 /* MCImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCImageSliderView.h; sourceTree = "<group>"; };
 		00C96CEC142F495C00096794 /* MCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCImageSliderView.m; sourceTree = "<group>"; };
 		00C96CEF142F4A7D00096794 /* MeganFox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeganFox.jpg; sourceTree = "<group>"; };
+		00CBA8A91443457A00854EE8 /* MCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMath.h; sourceTree = "<group>"; };
+		00CBA8AA1443457A00854EE8 /* MCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMath.m; sourceTree = "<group>"; };
 		00CC0F931437010200AC6C4C /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
 		00CC10421437576400AC6C4C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		00CC10631437578D00AC6C4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 			children = (
 				00336F12142E381000E34ED3 /* MCFoundation.h */,
 				00336F13142E381000E34ED3 /* MCFoundation.m */,
+				00CBA8A91443457A00854EE8 /* MCMath.h */,
+				00CBA8AA1443457A00854EE8 /* MCMath.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				00C79B73143D702500441626 /* MCFittingViewController.m in Sources */,
 				007E4E36143EBC58000367C2 /* MCImageAssemblyView.m in Sources */,
 				00A7EA721441DF8300F3E5C9 /* MCButton.m in Sources */,
+				00CBA8AB1443457A00854EE8 /* MCMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

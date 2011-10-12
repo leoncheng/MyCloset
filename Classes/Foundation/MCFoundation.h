@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MCMath.h"
 
 #define MC_DECLARE_AS_SINGLETON(interfaceName)                          \
 + (interfaceName*)SharedInstance;                                               \
@@ -37,7 +38,6 @@ if (p != nil)        \
 [p release];     \
 p = nil;         \
 }
-
 
 @interface MCFoundation : NSObject {
 

@@ -11,15 +11,18 @@
 @class MCButton;
 @protocol MCImageAssemblyViewCellDelegate;
 
-@interface MCImageAssemblyViewCell : UIButton
+@interface MCImageAssemblyViewCell : UIButton<UIGestureRecognizerDelegate>
 {
 	CGPoint m_startLocation;
 	MCButton* m_closeButton;
-	UIButton* m_scaleButton;
+	//MCButton* m_scaleButton;
 	id<MCImageAssemblyViewCellDelegate> m_delegate;
+	//BOOL m_scaling;
 }
 
 @property(nonatomic, assign) id<MCImageAssemblyViewCellDelegate> Delegate;
+
+- (void)_RegisterGestures;
 @end
 
 @protocol MCImageAssemblyViewCellDelegate <NSObject>

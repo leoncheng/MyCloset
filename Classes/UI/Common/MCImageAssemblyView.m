@@ -27,14 +27,25 @@
 	m_closeButton.hidden = YES;
 	
 	//add scale button on the right bottom corner
+	/*
 	CGFloat scaleBtnWidth = 20;
 	CGFloat scaleBtnHeight = 20;
 	CGFloat scaleBtnX = -10 + self.frame.size.width;
 	CGFloat scaleBtnY = -10 + self.frame.size.height;
-	m_scaleButton = [[UIButton alloc] initWithFrame:CGRectMake(scaleBtnX, scaleBtnY, scaleBtnWidth, scaleBtnHeight)];
+	m_scaleButton = [[MCButton alloc] initWithFrame:CGRectMake(scaleBtnX, scaleBtnY, scaleBtnWidth, scaleBtnHeight)];
 	[m_scaleButton setImage:[UIImage imageNamed:@"scaleButton.jpeg"] forState:UIControlStateNormal];
+	[m_scaleButton addTarget:self action:@selector(OnTouchDownScaleBtn:) forControlEvents:UIControlEventTouchDown];
+	[m_scaleButton addTarget:self action:@selector(OnDragScaleBtn:withEvent:) forControlEvents:UIControlEventTouchDragInside];
+	[m_scaleButton addTarget:self action:@selector(OnTouchUpScaleBtn:) forControlEvents:UIControlEventTouchUpInside];
+	m_scaleButton.ErrorMargin = 10;
 	[self addSubview:m_scaleButton];
 	m_scaleButton.hidden = YES;
+	
+	//initial status
+	m_scaling = NO;
+	 */
+
+	[self _RegisterGestures];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -49,7 +60,7 @@
 - (void)dealloc
 {
 	MCSAFERELEASE(m_closeButton)
-	MCSAFERELEASE(m_scaleButton)
+	//MCSAFERELEASE(m_scaleButton)
 	[super dealloc];
 }
 
@@ -57,10 +68,10 @@
 {
 	[super setSelected:selected];
 	m_closeButton.hidden = !selected;
-	m_scaleButton.hidden = !selected;
+	//m_scaleButton.hidden = !selected;
 }
 
-
+/*
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
 	[super touchesBegan:touches withEvent:event];
     // Retrieve the touch point
@@ -78,6 +89,7 @@
     frame.origin.y += pt.y - m_startLocation.y;
     [self setFrame:frame];
 }
+ */
 
 - (void)OnTouchClose:(id)sender
 {
@@ -87,21 +99,104 @@
 	[self removeFromSuperview];
 }
 
+/*
+- (void)OnTouchDownScaleBtn:(id)sender
+{
+	m_scaling = YES;
+	NSLog(@"On touch down scale button");
+}
+
+- (void)OnTouchUpScaleBtn:(id)sender
+{
+	m_scaling = NO;
+	NSLog(@"On touch up scale button");
+}
+
+- (void)OnDragScaleBtn:(id)sender withEvent:(UIEvent*) event
+{
+	CGPoint point = [[[event allTouches] anyObject] locationInView:self];
+	//caculate the angle based on the law of cosines
+	NSLog(@"cur point  %f, %f", point.x, point.y);
+}
+*/
 //extend the user interation area 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
-	CGRect buttonFrame = m_closeButton.frame;
-	buttonFrame.origin.x -= 10;
-	buttonFrame.origin.y -= 10;
-	buttonFrame.size.width += 20;
-	buttonFrame.size.height += 20;
+	CGRect closeButtonArea = m_closeButton.frame;
+	closeButtonArea.origin.x -= 10;
+	closeButtonArea.origin.y -= 10;
+	closeButtonArea.size.width += 20;
+	closeButtonArea.size.height += 20;
 	
+	/*
+	CGRect scaleButtonArea = m_scaleButton.frame;
+	scaleButtonArea.origin.x -= 10;
+	scaleButtonArea.origin.y -= 10;
+	scaleButtonArea.size.width += 20;
+	scaleButtonArea.size.height += 20;
+	*/
     if (CGRectContainsPoint(self.bounds, point) ||
-        CGRectContainsPoint(buttonFrame, point)){
+        CGRectContainsPoint(closeButtonArea, point)
+		/*CGRectContainsPoint(scaleButtonArea, point)*/) {
         return YES;
 	}
 	return NO;
 }
+
+- (void)_RegisterGestures
+{
+	UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_PanCell:)];
+    [panGesture setMaximumNumberOfTouches:2];
+    [panGesture setDelegate:self];
+    [self addGestureRecognizer:panGesture];
+    [panGesture release];
+	
+	UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(_ScaleCell:)];
+    [pinchGesture setDelegate:self];
+    [self addGestureRecognizer:pinchGesture];
+    [pinchGesture release];
+	
+	UIRotationGestureRecognizer *rotationGesture = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(_RotateCell:)];
+    [self addGestureRecognizer:rotationGesture];
+    [rotationGesture release];
+}
+
+#pragma mark UIGestureRecognizerDelegate
+// shift the piece's center by the pan amount
+// reset the gesture recognizer's translation to {0, 0} after applying so the next callback is a delta from the current position
+- (void)_PanCell:(UIPanGestureRecognizer *)gestureRecognizer
+{
+    MCImageAssemblyViewCell *cell = (MCImageAssemblyViewCell*)[gestureRecognizer view];
+    
+    if ([gestureRecognizer state] == UIGestureRecognizerStateBegan 
+		|| [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
+		
+        CGPoint translation = [gestureRecognizer translationInView:[cell superview]];
+        [cell setCenter:CGPointMake([cell center].x + translation.x, [cell center].y + translation.y)];
+        [gestureRecognizer setTranslation:CGPointZero inView:[cell superview]];
+    }
+}
+
+// scale the piece by the current scale
+// reset the gesture recognizer's rotation to 0 after applying so the next callback is a delta from the current scale
+- (void)_ScaleCell:(UIPinchGestureRecognizer *)gestureRecognizer
+{
+    if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
+        [gestureRecognizer view].transform = CGAffineTransformScale([[gestureRecognizer view] transform], [gestureRecognizer scale], [gestureRecognizer scale]);
+        [gestureRecognizer setScale:1];
+    }
+}
+
+// rotate the piece by the current rotation
+// reset the gesture recognizer's rotation to 0 after applying so the next callback is a delta from the current rotation
+- (void)_RotateCell:(UIRotationGestureRecognizer *)gestureRecognizer
+{
+    if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
+        [gestureRecognizer view].transform = CGAffineTransformRotate([[gestureRecognizer view] transform], [gestureRecognizer rotation]);
+        [gestureRecognizer setRotation:0];
+    }
+}
+
 
 @end
 
