@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    [self.window addSubview:m_naviController.view];
+    [self.window addSubview:m_tabBarController.view];
 	[self.window makeKeyAndVisible];
     
     return YES;
@@ -75,7 +75,7 @@
 
 
 - (void)dealloc {
-	[m_naviController release];
+	[m_tabBarController release];
     [window release];
     [super dealloc];
 }

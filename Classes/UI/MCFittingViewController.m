@@ -15,6 +15,7 @@
     [super viewDidLoad];
 	
 	self.title = @"试衣间";
+	self.navigationItem.hidesBackButton = YES; 
 	
 	UIBarButtonItem* closetBtnItem = [[UIBarButtonItem alloc] 
 						initWithTitle:@"衣橱" 
@@ -76,7 +77,18 @@
 
 - (void)_OnTouchClosetItemBtn:(id)sender
 {
-	[self.parentViewController dismissModalViewControllerAnimated:YES];
+	[UIView  beginAnimations:nil context:NULL];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+	[UIView setAnimationDuration:0.75];
+	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+	[UIView commitAnimations];
+	
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDelay:0.1];
+	[self.navigationController popViewControllerAnimated:NO];
+	[UIView commitAnimations];
+	 
+	//[self.parentViewController dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark MCImageSliderViewDelegate Methods

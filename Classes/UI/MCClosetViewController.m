@@ -261,13 +261,20 @@
 		//go to fitting view
 		MCFittingViewController* fittingController = [[MCFittingViewController alloc] initWithNibName:@"MCFittingViewController" bundle:nil];
 		[fittingController SetParam:selectedItems withKey:@"selectedItems"];
-		fittingController.modalTransitionStyle = UIViewAnimationTransitionFlipFromLeft;
-		UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:fittingController];
+		//fittingController.modalTransitionStyle = UIViewAnimationTransitionFlipFromLeft;
+		//UINavigationController* naviController = [[UINavigationController alloc] initWithRootViewController:fittingController];
+		
+		[UIView  beginAnimations:nil context:NULL];
+		[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+		[UIView setAnimationDuration:0.75];
+		[self.navigationController pushViewController:fittingController animated:NO];
+		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+		[UIView commitAnimations];
+		
+		
+		//[self presentModalViewController:naviController animated:YES];
+		//[naviController release];
 		[fittingController release];
-		
-		[self presentModalViewController:naviController animated:YES];
-		[naviController release];
-		
 	}
 
 }
