@@ -11,10 +11,10 @@
 @interface MCTableViewResource : NSObject
 {
 	NSString* m_cellName;
-	NSObject* m_data;
+	id m_data;
 }
 @property(nonatomic, retain) NSString* CellName;
-@property(nonatomic, retain) NSObject* Data;
+@property(nonatomic, retain) id Data;
 @end
 
 
@@ -43,6 +43,8 @@
 - (void)CommonInit;
 
 - (void)AddResource:(MCTableViewResource*)resource;
+
+- (void)ClearResources;
 
 - (void)ReleaseViews;
 @end

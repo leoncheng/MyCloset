@@ -221,6 +221,7 @@
 
 - (void)CommonInit
 {
+	self.backgroundColor = [UIColor whiteColor];
 	m_imageCells = [[NSMutableArray alloc] init];
 	[self addTarget:self action:@selector(OnTouch:) forControlEvents:UIControlEventTouchDown];
 }

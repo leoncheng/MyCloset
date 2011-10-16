@@ -9,7 +9,7 @@
 #import "MyClosetAppDelegate.h"
 
 @implementation MyClosetAppDelegate
-
+@synthesize TabBarController = m_tabBarController;
 @synthesize window;
 
 

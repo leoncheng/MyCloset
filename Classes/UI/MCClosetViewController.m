@@ -10,12 +10,14 @@
 #import "MCItemDetailViewController.h"
 #import "MCFittingViewController.h"
 
+#define MC_CLOSET_ROW_HEIGHT 92
+
 @implementation MCClosetColumnCell
 
 - (void)CommonInit
 {
 	CGRect sliderframe = self.bounds;
-	sliderframe.size.height = 104;	//the height of the cell is still 44 at the moment, so we need to assign 104 manually
+	sliderframe.size.height = MC_CLOSET_ROW_HEIGHT;	//the height of the cell is still 44 at the moment, so we need to assign 91 manually
 	
 	m_itemsSliderView = [[MCImageSliderView alloc] initWithFrame:sliderframe];
 	[self addSubview:m_itemsSliderView];
@@ -121,11 +123,11 @@
 	}
 	
 	
-	self.title = @"我的衣柜";
+	self.title = @"衣橱";
 	
 	//customize row height
 	UITableView* curView = self.tableView;
-	curView.rowHeight = 104; //we only need 4 rows, each one's height is 104
+	curView.rowHeight = MC_CLOSET_ROW_HEIGHT; //we only need 4 rows, each one's height is 92
 	
 	curView.scrollEnabled = NO;
 	

@@ -114,6 +114,11 @@
 	[m_resourceList addObject:resource];
 }
 
+- (void)ClearResources
+{
+	[m_resourceList removeAllObjects];
+}
+
 - (void)ReleaseViews
 {
 	//do nothing

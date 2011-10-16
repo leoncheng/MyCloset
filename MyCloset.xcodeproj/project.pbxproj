@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000E71B2144988F600FC0F70 /* MCOutfitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000E71B1144988F600FC0F70 /* MCOutfitsViewController.m */; };
 		00336E37142DFC7E00E34ED3 /* MCUserItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336E25142DFC7E00E34ED3 /* MCUserItemList.m */; };
 		00336E38142DFC7E00E34ED3 /* MCUserItemTypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336E27142DFC7E00E34ED3 /* MCUserItemTypeList.m */; };
-		00336E45142E02B800E34ED3 /* MyCloset.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 00336E44142E02B800E34ED3 /* MyCloset.xcdatamodel */; };
 		00336E5F142E083200E34ED3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00336E5E142E083200E34ED3 /* CoreData.framework */; };
 		00336F05142E34BF00E34ED3 /* MCModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F04142E34BF00E34ED3 /* MCModelHelper.m */; };
 		00336F14142E381000E34ED3 /* MCFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00336F13142E381000E34ED3 /* MCFoundation.m */; };
@@ -23,6 +23,10 @@
 		00A10F1E143497970003D740 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A10F1D143497970003D740 /* MobileCoreServices.framework */; };
 		00A10F2A143498B40003D740 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A10F29143498B40003D740 /* MCViewController.m */; };
 		00A7EA721441DF8300F3E5C9 /* MCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A7EA711441DF8300F3E5C9 /* MCButton.m */; };
+		00ADED2D144A9BC600729C0A /* MCOutfitImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADED2C144A9BC600729C0A /* MCOutfitImageViewController.m */; };
+		00ADED2F144A9D6C00729C0A /* MCOutfitImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00ADED2E144A9D6C00729C0A /* MCOutfitImageViewController.xib */; };
+		00ADEDFB144AFFC500729C0A /* MCOutfit.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADEDFA144AFFC500729C0A /* MCOutfit.m */; };
+		00ADEE27144B096C00729C0A /* MyCloset.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00ADEE26144B096C00729C0A /* MyCloset.xcdatamodeld */; };
 		00C79B73143D702500441626 /* MCFittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C79B72143D702500441626 /* MCFittingViewController.m */; };
 		00C79B77143D705000441626 /* MCFittingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C79B76143D705000441626 /* MCFittingViewController.xib */; };
 		00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C96CEC142F495C00096794 /* MCImageSliderView.m */; };
@@ -43,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000E71B0144988F600FC0F70 /* MCOutfitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOutfitsViewController.h; sourceTree = "<group>"; };
+		000E71B1144988F600FC0F70 /* MCOutfitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOutfitsViewController.m; sourceTree = "<group>"; };
 		00336E23142DFC7E00E34ED3 /* MCModelCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCModelCommon.h; sourceTree = "<group>"; };
 		00336E24142DFC7E00E34ED3 /* MCUserItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUserItemList.h; sourceTree = "<group>"; };
 		00336E25142DFC7E00E34ED3 /* MCUserItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUserItemList.m; sourceTree = "<group>"; };
@@ -70,6 +76,12 @@
 		00A10F29143498B40003D740 /* MCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
 		00A7EA701441DF8300F3E5C9 /* MCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCButton.h; sourceTree = "<group>"; };
 		00A7EA711441DF8300F3E5C9 /* MCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCButton.m; sourceTree = "<group>"; };
+		00ADED2B144A9BC600729C0A /* MCOutfitImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOutfitImageViewController.h; sourceTree = "<group>"; };
+		00ADED2C144A9BC600729C0A /* MCOutfitImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOutfitImageViewController.m; sourceTree = "<group>"; };
+		00ADED2E144A9D6C00729C0A /* MCOutfitImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MCOutfitImageViewController.xib; path = Resources/Xibs/MCOutfitImageViewController.xib; sourceTree = "<group>"; };
+		00ADEDF9144AFFC500729C0A /* MCOutfit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOutfit.h; sourceTree = "<group>"; };
+		00ADEDFA144AFFC500729C0A /* MCOutfit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOutfit.m; sourceTree = "<group>"; };
+		00ADEE28144B096C00729C0A /* MyCloset 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyCloset 2.xcdatamodel"; sourceTree = "<group>"; };
 		00C79B71143D702500441626 /* MCFittingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFittingViewController.h; sourceTree = "<group>"; };
 		00C79B72143D702500441626 /* MCFittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFittingViewController.m; sourceTree = "<group>"; };
 		00C79B76143D705000441626 /* MCFittingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCFittingViewController.xib; sourceTree = "<group>"; };
@@ -118,6 +130,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000E728414499CFA00FC0F70 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 		00336E18142DFC7E00E34ED3 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +163,8 @@
 		00336E1C142DFC7E00E34ED3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				00ADEDF9144AFFC500729C0A /* MCOutfit.h */,
+				00ADEDFA144AFFC500729C0A /* MCOutfit.m */,
 				008ADED414335D85003D95D6 /* MCItem.h */,
 				008ADED514335D85003D95D6 /* MCItem.m */,
 				00CDBB05142ECDD900BAEFBB /* MCItemType.h */,
@@ -151,7 +172,7 @@
 				00336E23142DFC7E00E34ED3 /* MCModelCommon.h */,
 				00336F03142E34BF00E34ED3 /* MCModelHelper.h */,
 				00336F04142E34BF00E34ED3 /* MCModelHelper.m */,
-				00336E44142E02B800E34ED3 /* MyCloset.xcdatamodel */,
+				00ADEE26144B096C00729C0A /* MyCloset.xcdatamodeld */,
 				008ADEDC14335E6E003D95D6 /* ImageToDataTransformer.h */,
 				008ADEDD14335E6E003D95D6 /* ImageToDataTransformer.m */,
 			);
@@ -163,6 +184,7 @@
 			children = (
 				0097646914314C28007B9E07 /* MCItemDetailViewController.xib */,
 				00C79B76143D705000441626 /* MCFittingViewController.xib */,
+				00ADED2E144A9D6C00729C0A /* MCOutfitImageViewController.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -191,6 +213,10 @@
 				0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */,
 				00C79B71143D702500441626 /* MCFittingViewController.h */,
 				00C79B72143D702500441626 /* MCFittingViewController.m */,
+				000E71B0144988F600FC0F70 /* MCOutfitsViewController.h */,
+				000E71B1144988F600FC0F70 /* MCOutfitsViewController.m */,
+				00ADED2B144A9BC600729C0A /* MCOutfitImageViewController.h */,
+				00ADED2C144A9BC600729C0A /* MCOutfitImageViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -216,6 +242,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				000E728414499CFA00FC0F70 /* External */,
 				00336E18142DFC7E00E34ED3 /* Foundation */,
 				00336E1B142DFC7E00E34ED3 /* Models */,
 				00CDBB84142EF48900BAEFBB /* UI */,
@@ -334,6 +361,7 @@
 				00C79B77143D705000441626 /* MCFittingViewController.xib in Resources */,
 				008D01B4144086B800E10A7B /* closeButton.png in Resources */,
 				008D01B5144086B800E10A7B /* scaleButton.jpeg in Resources */,
+				00ADED2F144A9D6C00729C0A /* MCOutfitImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +376,7 @@
 				1D3623260D0F684500981E51 /* MyClosetAppDelegate.m in Sources */,
 				00336E37142DFC7E00E34ED3 /* MCUserItemList.m in Sources */,
 				00336E38142DFC7E00E34ED3 /* MCUserItemTypeList.m in Sources */,
-				00336E45142E02B800E34ED3 /* MyCloset.xcdatamodel in Sources */,
+				00ADEE27144B096C00729C0A /* MyCloset.xcdatamodeld in Sources */,
 				00336F05142E34BF00E34ED3 /* MCModelHelper.m in Sources */,
 				00336F14142E381000E34ED3 /* MCFoundation.m in Sources */,
 				00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */,
@@ -364,6 +392,9 @@
 				007E4E36143EBC58000367C2 /* MCImageAssemblyView.m in Sources */,
 				00A7EA721441DF8300F3E5C9 /* MCButton.m in Sources */,
 				00CBA8AB1443457A00854EE8 /* MCMath.m in Sources */,
+				000E71B2144988F600FC0F70 /* MCOutfitsViewController.m in Sources */,
+				00ADED2D144A9BC600729C0A /* MCOutfitImageViewController.m in Sources */,
+				00ADEDFB144AFFC500729C0A /* MCOutfit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +411,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyCloset_Prefix.pch;
 				INFOPLIST_FILE = "MyCloset-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/External/klazuka-Kal-b2e164c/src/build/Debug-iphonesimulator\"",
+				);
 				PRODUCT_NAME = MyCloset;
 			};
 			name = Debug;
@@ -392,6 +427,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyCloset_Prefix.pch;
 				INFOPLIST_FILE = "MyCloset-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/External/klazuka-Kal-b2e164c/src/build/Debug-iphonesimulator\"",
+				);
 				PRODUCT_NAME = MyCloset;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -452,6 +491,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00ADEE26144B096C00729C0A /* MyCloset.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00336E44142E02B800E34ED3 /* MyCloset.xcdatamodel */,
+				00ADEE28144B096C00729C0A /* MyCloset 2.xcdatamodel */,
+			);
+			currentVersion = 00ADEE28144B096C00729C0A /* MyCloset 2.xcdatamodel */;
+			path = MyCloset.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

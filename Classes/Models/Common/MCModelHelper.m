@@ -79,9 +79,17 @@ MC_DEFINE_SINGLETON(MCModelHelper)
 	
 	NSURL *storeUrl = [NSURL fileURLWithPath:storePath];
 	
+	//handle auto migrate, otherwise, once you add new object, you will receive warning:
+	//"The model used to open the store is incompatible with the one used to create the store"
+	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+							 
+							 [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+							 
+							 [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+	
 	NSError *error;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:options error:&error]) {
 		/*
 		 Replace this implementation with code to handle the error appropriately.
 		 

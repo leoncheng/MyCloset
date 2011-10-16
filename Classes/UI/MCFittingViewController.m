@@ -7,6 +7,7 @@
 //
 
 #import "MCFittingViewController.h"
+#import "MCOutfitImageViewController.h"
 
 @implementation MCFittingViewController
 
@@ -24,9 +25,16 @@
 						action:@selector(_OnTouchClosetItemBtn:)];
 	self.navigationItem.rightBarButtonItem = closetBtnItem;
 	
+	UIBarButtonItem* saveBtnItem = [[UIBarButtonItem alloc] 
+									  initWithTitle:@"保存" 
+									  style:UIBarButtonItemStyleBordered 
+									  target:self 
+									  action:@selector(_OnTouchSaveBtn:)];
+	self.navigationItem.leftBarButtonItem = saveBtnItem;	
+	
 	//add items slider at the bottom of the view
 	CGRect itemSliderFrame = self.view.frame;
-	itemSliderFrame.size.height = 104;
+	itemSliderFrame.size.height = 92;
 	itemSliderFrame.origin.y = self.view.frame.size.height - itemSliderFrame.size.height;
 	m_itemSlider = [[MCImageSliderView alloc] initWithFrame:itemSliderFrame];
 	m_itemSlider.Delegate = self;
@@ -89,6 +97,23 @@
 	[UIView commitAnimations];
 	 
 	//[self.parentViewController dismissModalViewControllerAnimated:YES];
+}
+
+- (void)_OnTouchSaveBtn:(id)sender
+{
+	// Capture screen here...
+	CGRect imageRect = [m_assemblyView bounds];    
+    UIGraphicsBeginImageContext(imageRect.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext(); 
+    [m_assemblyView.layer renderInContext:ctx];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+	
+	MCOutfitImageViewController* controller = [[MCOutfitImageViewController alloc] initWithNibName:@"MCOutfitImageViewController" bundle:nil];
+	[controller SetParam:newImage withKey:@"outfitImage"];
+	[self  presentModalViewController:controller animated:NO];
+	[controller release];
+	
 }
 
 #pragma mark MCImageSliderViewDelegate Methods

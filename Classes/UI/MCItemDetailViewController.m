@@ -133,7 +133,7 @@
 	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
 															 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"相机" otherButtonTitles:nil];
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-	[actionSheet showInView:self.view]; // show from our table view (pops up in the middle of the table)
+	[actionSheet showInView:self.view]; 
 	[actionSheet release];
 	
 }

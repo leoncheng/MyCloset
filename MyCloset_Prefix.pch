@@ -9,4 +9,5 @@
 	#import "MCFoundation.h"
 	#import "MCModelCommon.h"
 	#import "MCUICommon.h"
+	#import "MyClosetAppDelegate.h"
 #endif
