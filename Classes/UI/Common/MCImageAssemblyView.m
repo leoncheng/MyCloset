@@ -252,6 +252,7 @@
 	for (MCImageAssemblyViewCell* cell in m_imageCells) {
 		if (cell == selectedCell) {
 			cell.selected = YES;
+			[self bringSubviewToFront:cell];
 		} else {
 			cell.selected = NO;
 		}

@@ -13,6 +13,7 @@
 #define MC_CLOSET_ROW_HEIGHT 92
 
 @implementation MCClosetColumnCell
+@synthesize Delegate = m_delegate;
 
 - (void)CommonInit
 {
@@ -80,6 +81,14 @@
 #pragma mark MCImageSliderViewDelegate methods
 - (void)ImageSliderView:(MCImageSliderView*)imageSlider DidSelectedAtIndex:(NSUInteger)index
 {
+	NSArray* typeList = [[MCModelHelper SharedInstance] Load:@"MCItemType"];
+	MCItemType* curType = [typeList objectAtIndex:m_row];
+	NSArray* itemList = curType.Items.allObjects;	
+	
+	MCItem* selectedItem = [itemList objectAtIndex:index];
+	if (m_delegate && [m_delegate respondsToSelector:@selector(OnSelectItem:)]) {
+		[m_delegate OnSelectItem:selectedItem];
+	}
 	
 }
 
@@ -313,6 +322,14 @@
 	NSLog(@"delete");
 }
 
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	MCClosetColumnCell* curCell = (MCClosetColumnCell*)[super tableView:tableView cellForRowAtIndexPath:indexPath];
+	curCell.Delegate = self;
+	return curCell;
+}
+
+
 #pragma mark MCItemDetailViewControllerDelegate methods
 - (void)OnSave:(MCItem*)item
 {
@@ -329,6 +346,15 @@
 	//update the corresponding row in the table
 	NSArray* indexPaths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:typeIndex inSection:0]];
 	[self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:NO];
+	
+}
+
+#pragma mark MCClosetColumnCellDelegate methods
+- (void)OnSelectItem:(MCItem*)item
+{
+	if (self.editing == NO) {
+		NSLog(@"on select item");
+	}
 	
 }
 

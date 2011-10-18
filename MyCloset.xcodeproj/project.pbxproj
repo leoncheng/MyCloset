@@ -38,7 +38,6 @@
 		00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB06142ECDD900BAEFBB /* MCItemType.m */; };
 		00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB87142EF48900BAEFBB /* MCTableViewController.m */; };
 		00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */; };
-		00CDBB9A142EF48900BAEFBB /* MCItemTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */; };
 		1D3623260D0F684500981E51 /* MyClosetAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MyClosetAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -100,8 +99,6 @@
 		00CDBB88142EF48900BAEFBB /* MCUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUICommon.h; sourceTree = "<group>"; };
 		00CDBB8D142EF48900BAEFBB /* MCClosetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClosetViewController.h; sourceTree = "<group>"; };
 		00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClosetViewController.m; sourceTree = "<group>"; };
-		00CDBB91142EF48900BAEFBB /* MCItemTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCItemTypeListViewController.h; sourceTree = "<group>"; };
-		00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCItemTypeListViewController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MyClosetAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClosetAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* MyClosetAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClosetAppDelegate.m; sourceTree = "<group>"; };
@@ -207,8 +204,6 @@
 				00CDBB85142EF48900BAEFBB /* Common */,
 				00CDBB8D142EF48900BAEFBB /* MCClosetViewController.h */,
 				00CDBB8E142EF48900BAEFBB /* MCClosetViewController.m */,
-				00CDBB91142EF48900BAEFBB /* MCItemTypeListViewController.h */,
-				00CDBB92142EF48900BAEFBB /* MCItemTypeListViewController.m */,
 				0097646C14314C8B007B9E07 /* MCItemDetailViewController.h */,
 				0097646D14314C8B007B9E07 /* MCItemDetailViewController.m */,
 				00C79B71143D702500441626 /* MCFittingViewController.h */,
@@ -382,7 +377,6 @@
 				00CDBB07142ECDD900BAEFBB /* MCItemType.m in Sources */,
 				00CDBB95142EF48900BAEFBB /* MCTableViewController.m in Sources */,
 				00CDBB98142EF48900BAEFBB /* MCClosetViewController.m in Sources */,
-				00CDBB9A142EF48900BAEFBB /* MCItemTypeListViewController.m in Sources */,
 				00C96CED142F495C00096794 /* MCImageSliderView.m in Sources */,
 				0097646E14314C8B007B9E07 /* MCItemDetailViewController.m in Sources */,
 				008ADED614335D85003D95D6 /* MCItem.m in Sources */,
